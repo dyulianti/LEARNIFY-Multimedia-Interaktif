@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="id" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learnify</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              heading: ["JetBrains Mono", "monospace"],
+              body: ["Space Grotesk", "sans-serif"],
+            },
+            colors: {
+              bg: "#0a0e1a",
+              surface: "#131829",
+              accent: "#00e5ff",
+              action: "#7c3aed",
+              text: "#e0e7ff",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="h-full bg-bg text-text font-body">
+    <div id="app" class="h-full w-full overflow-auto grid-bg"></div>
+    <script src="main.js" defer></script>
+  </body>
+</html>
